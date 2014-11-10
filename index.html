@@ -103,7 +103,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item text-center">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a data-target=".memory" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -151,7 +151,6 @@
             </div>
         </div>
     </section>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -201,28 +200,24 @@
     </section>
     <!-- Portfolio Modals -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>清瀬管弦楽団の生い立ち</h2>
-                            <hr class="star-primary">
-                            <img src="img/home.png" class="img-responsive img-centered" alt="">
-                            <p>清瀬がまだ「町」であった昭和３３年から活動を続け、近隣市のなかでも飛びぬけて長い! 清瀬の誇りです。清瀬市を中心に活動している地域密着型オーケストラです。</p>
-                            <p>当楽団設立当時(昭和３３年当時）の思い出(西村団長)</p>
-                            <p>第１回目の演奏会は｢歳末助け合い演奏会｣でした。演奏会の前日、公民館(当市民センターと同じ所にありました)に、小学校から借りた教壇を洗って舞台に 配置したり、客席の掃除や椅子並べなど、夜遅くまで会場作りをしました。暖房用にやや大きめの石油ストーブを会場の四隅に置き、それだけでは足りずに、団 員の石油ストーブも借りました。このストーブが開演中燃え出したりの大騒ぎのなかの約４時間という長時間の演奏会でした。一部プロの演奏家の方々のご協力 があったとはいえ、大多数の団員の拙い演奏に、最後まで熱心に聴いてくださったお客様に、団員皆深く心を動かされたのでした。</p>
-                            <p>活動場所は、普段の練習場所の竹丘地域市民センターでの小音楽会『竹丘サロンコンサート』活動のメインとなる『清瀬けやきホール』での定期演奏会の他、賛助会員の方々を対象とした『ふれあいコンサート』、アミュー等での演奏と、活動の範囲を広げています。</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">
-                                <i class="fa fa-times"></i>閉じる
-                            </button>
-                        </div>
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
                     </div>
+                </div>
+                <div class="modal-body">
+                    <h2>清瀬管弦楽団の生い立ち</h2>
+                    <hr class="star-primary">
+                    <img src="img/home.png" class="img-responsive img-centered" alt="">
+                    <p>清瀬がまだ「町」であった昭和３３年から活動を続け、近隣市のなかでも飛びぬけて長い! 清瀬の誇りです。清瀬市を中心に活動している地域密着型オーケストラです。</p>
+                    <p>当楽団設立当時(昭和３３年当時）の思い出(西村団長)</p>
+                    <p>第１回目の演奏会は｢歳末助け合い演奏会｣でした。演奏会の前日、公民館(当市民センターと同じ所にありました)に、小学校から借りた教壇を洗って舞台に 配置したり、客席の掃除や椅子並べなど、夜遅くまで会場作りをしました。暖房用にやや大きめの石油ストーブを会場の四隅に置き、それだけでは足りずに、団 員の石油ストーブも借りました。このストーブが開演中燃え出したりの大騒ぎのなかの約４時間という長時間の演奏会でした。一部プロの演奏家の方々のご協力 があったとはいえ、大多数の団員の拙い演奏に、最後まで熱心に聴いてくださったお客様に、団員皆深く心を動かされたのでした。</p>
+                    <p>活動場所は、普段の練習場所の竹丘地域市民センターでの小音楽会『竹丘サロンコンサート』活動のメインとなる『清瀬けやきホール』での定期演奏会の他、賛助会員の方々を対象とした『ふれあいコンサート』、アミュー等での演奏と、活動の範囲を広げています。</p>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        <i class="fa fa-times"></i>閉じる
+                    </button>
                 </div>
             </div>
         </div>
@@ -239,7 +234,7 @@
                     <h2>演奏会会場・練習会場の場所</h2>
                     <hr class="star-primary">
                     <div id="map_canvas"></div>
-                    <div class="btn-group btn-group-vertical" data-toggle="buttons" id="map-radio">
+                    <div class="btn-group" data-toggle="buttons" id="map-radio">
                         <label class="btn btn-primary active">
                             <input type="radio" name="options" id="option1" value="1" autocomplete="off">竹丘地域市民センター
                         </label>
@@ -261,64 +256,30 @@
                         <label class="btn btn-primary">
                             <input type="radio" name="options" id="option7" value="7" autocomplete="off">東久留米中央公民館
                         </label>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            <i class="fa fa-times"></i>閉じる
-                        </button>
                     </div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        <i class="fa fa-times"></i>閉じる
+                    </button>
                 </div>
-                <!--<div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-
-                        </div>
-                    </div>
-                </div>-->
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>
-                                Use this area of the page to describe your project. The icon above is part of a free icon set by
-                                <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>
-                                    Client:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>
-                                    Date:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>
-                                    Service:
-                                    <strong>
-                                        <a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">
-                                <i class="fa fa-times"></i>Close
-                            </button>
-                        </div>
+    <div class="portfolio-modal modal fade memory" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
                     </div>
+                </div>
+                <div class="modal-body">
+                    <h2>演奏会の記録</h2>
+                    <hr class="star-primary">
+                    <img src="img/treble_clef.png" class="img-responsive img-centered" alt="">
+                    <iframe class="inner-table" src="data/memory.html"></iframe>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        <i class="fa fa-times"></i>閉じる
+                    </button>
                 </div>
             </div>
         </div>
