@@ -80,6 +80,11 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
+.dark-text
+{
+    text-shadow: 1px -1px 0 rgba(255,255,255,.5);
+}
+
 header {
     text-align: center;
     color: #fff;
@@ -94,6 +99,11 @@ header .container {
 header img {
     display: block;
     margin: 0 auto 20px;
+}
+
+header .intro-text
+{
+    text-shadow: 1px -1px 0 rgba(0,0,0,.5);
 }
 
 header .intro-text .name {
@@ -460,7 +470,14 @@ footer .footer-below {
 
 .img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
 margin: auto;
-padding-top: 10px;
+padding-top : 10px;
+}
+
+.img-photo
+{
+border-radius: 5px;
+box-shadow: rgba(0,0,0,.15) 0 0 0 3px;
+padding-top : 0px;
 }
 
 .btn-success {
